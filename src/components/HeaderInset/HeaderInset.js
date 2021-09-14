@@ -1,7 +1,7 @@
 
 
 const HeaderInset = (props) => (
-    <div className="headerInset-container">{props.children}</div>
+    <div className="headerInsetContainer">{props.children}</div>
 )
 
 export default HeaderInset

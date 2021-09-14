@@ -2,18 +2,20 @@
 import './App.css';
 import NewsList from './components/NewsList/NewsList';
 import NewsListItem from './components/NewsList/NewsListItem';
-import CoriousNews from './components/HeaderInset/CuriousNews';
-import LocalNews from './components/HeaderInset/LocalNews';
-import NowInNews from './components/HeaderInset/NowInNews';
+import HeaderInsetItem from './components/HeaderInset/HeaderInsetItem';
 import HeaderInset from './components/HeaderInset/HeaderInset';
+import Exchange from './components/Exchange/Exchange';
+import ExchangeItem from './components/Exchange/ExchangeItem';
+import SearchInput from './components/Search/SearchInput';
 
 export default function App() {
+
   return (
     <div className='App'>
       <HeaderInset >
-        <NowInNews>Сейчас в СМИ</NowInNews>
-        <LocalNews>Сейчас в Москве</LocalNews>
-        <CoriousNews>Интересное</CoriousNews>
+        <HeaderInsetItem>Сейчас в СМИ</HeaderInsetItem>
+        <HeaderInsetItem>Сейчас в Москве</HeaderInsetItem>
+        <HeaderInsetItem>Интересное</HeaderInsetItem>
       </HeaderInset>
       <NewsList>
         <NewsListItem>Путин не исключил уход на карантин из-за болеющих коронавирусом в его окружении</NewsListItem>
@@ -22,6 +24,12 @@ export default function App() {
         <NewsListItem>Путин поручил проиндексировать зарплату военным и правоохранителям в 2022-2023 годах</NewsListItem>
         <NewsListItem>Мэр Москвы Собянин объявил о начале отопительного сезона</NewsListItem>
       </NewsList>
+      <Exchange>
+        <ExchangeItem> USD MOEX 63,52</ExchangeItem>
+        <ExchangeItem> EUR MOEX 70,86</ExchangeItem>
+        <ExchangeItem> НЕФТЬ 64,90</ExchangeItem>
+      </Exchange>
+      <SearchInput></SearchInput>
     </div>
   );
 }

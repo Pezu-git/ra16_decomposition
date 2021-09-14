@@ -1,130 +1,69 @@
 .App {
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: right;
+  flex-direction: column;
 
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
 
-  margin: 0;
+  margin: auto;
+  /* margin-left: 50px; */
+  margin-top: 100px;
   padding: 0;
 }
 
-.container {
-  width: 600px;
-}
-
-.containerHeader {
-  display: flex;
-}
-
-.containerInputDate, 
-.containerInputDistance,
-.buttonOkContainer {
-  display: flex;
-  flex-direction: column;
-
-  margin: 0 30px;
-}
-
-
-.input {
-  text-align: center;
-
-  width: 200px;
-
-  margin: 20px 0;
-  padding: 5px 0 5px 0;
-
-  background: #f7f3f3;
-  color: #333;
-  font-size: 20px;
-
-  border: 1px solid;
-  border-radius: 10px; 
-}
-
-input[type="number"] {
-	-moz-appearance: textfield;
-	-webkit-appearance: textfield;
-	appearance: textfield;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-	display: none;
-}
-
-.buttonOkContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.buttonOk {
-  width: 50px;
-
-  margin: 42px 10px;
-  padding: 10px 0 10px 0;
-
-  border: 1px solid;
-  border-radius: 10px;
-
-  background: #f7f3f3;
-  cursor: pointer;
-}
-
-.diaryHeaderContainer {
+.headerInsetContainer, .exchangeContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 400px;
 
-  width: 450px;
-  margin: auto;
+  margin-left: 40px
 }
 
-.itemContainer {
-  display: flex;
+.newsListContainer {
+  width: 650px;
+  font-size: 15px;
 }
 
-.dateText {
-  width: 160px;
-  margin: 20px 10px
-}
-.distText {
-  text-align: center;
-
-  width: 120px;
-  margin: 20px 10px 
+ul {
+  list-style: none; 
 }
 
-.deleteBtn {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
+li:before {
+  font-family: 'FontAwesome';
+  content: '\f12a';
+  margin:0 5px 0 -15px;
+  color: violet;
+  }
 
-  font-size: 10px;
-}
+  .searchContainer {
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+  }
 
-.containerButton {
-  display: flex;
-  margin: 20px 0 20px 70px;
-}
+  .searchLogo {
+    width: 40px
+  }
 
+  .search {
+    width: 800px;
+    height: 26px;
+    padding: 0;
+  }
 
-.containerDiary {
-  width: 500px;
-  margin: auto;
+  .serachButton {
+    height: 30px;
+  }
 
-  border: 1px solid;
-  border-radius: 10px;
-}
-.myStepContainer {
-  display: flex;
-  flex-direction: column;
+  .inputContainer {
+    display: flex;
+    /* align-items: baseline; */
+  }
 
-  width: 450px;
-  margin: auto;
-}
 
 
 
