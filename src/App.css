@@ -22,6 +22,7 @@
   align-items: center;
   width: 400px;
 
+  margin-top: 10px;
   margin-left: 40px
 }
 
@@ -52,6 +53,14 @@ ul {
   background-position: center;
   background-size: contain;
   background-origin: border-box;
+  }
+
+  .inputInsetContainer {
+    width: 600px;
+  }
+  .inputInsetLink {
+    font-weight: 500;
+    font-size: medium;
   }
   
 
@@ -104,13 +113,45 @@ ul {
     width: 600px;
   } 
   .searchInsetItem {
-    /* position: relative; */
     margin: 0;
     padding: 0;
   }
 
   .searchInsetItemLink {
     font-size: medium;
+    font-weight: 400;
+  }
+
+  .GarriImg {
+    margin: 20px 0px 0px 40px;
+    width: 560px;
+    height: 280px;
+  }
+
+  .weatherContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .weatherImg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .temperature, .morningNight {
+    color: black;
+  }
+  .temperature {
+    font-size: 26px;
+    margin-left: 10px;
+  }
+
+  .morningNight {
+    margin-left: 10px;
+  }
+
+  .morningNightText {
+    margin: 0;
     font-weight: 400;
   }
 
