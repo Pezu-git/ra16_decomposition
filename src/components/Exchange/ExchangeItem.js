@@ -1,7 +1,7 @@
 
 
 const ExchangeItem = (props) => (
-    <p className="link ">{props.children}</p> 
+    <p className="exchangeItem">{props.children}</p> 
 )
 
 export default ExchangeItem

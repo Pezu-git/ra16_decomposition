@@ -7,6 +7,11 @@ import HeaderInset from './components/HeaderInset/HeaderInset';
 import Exchange from './components/Exchange/Exchange';
 import ExchangeItem from './components/Exchange/ExchangeItem';
 import SearchInput from './components/Search/SearchInput';
+import SearchInset from './components/Search/SearchInset';
+import SearchInsetItem from './components/Search/SearchInsetItem';
+
+
+
 
 export default function App() {
 
@@ -25,11 +30,22 @@ export default function App() {
         <NewsListItem>Мэр Москвы Собянин объявил о начале отопительного сезона</NewsListItem>
       </NewsList>
       <Exchange>
-        <ExchangeItem> USD MOEX 63,52</ExchangeItem>
-        <ExchangeItem> EUR MOEX 70,86</ExchangeItem>
-        <ExchangeItem> НЕФТЬ 64,90</ExchangeItem>
+        <ExchangeItem>USD MOEX 63,52</ExchangeItem>
+        <ExchangeItem>EUR MOEX 70,86</ExchangeItem>
+        <ExchangeItem>НЕФТЬ 64,90</ExchangeItem>
       </Exchange>
-      <SearchInput></SearchInput>
+      <SearchInset>
+        <SearchInsetItem>Видео</SearchInsetItem>
+        <SearchInsetItem>Картинки</SearchInsetItem>
+        <SearchInsetItem>Новости</SearchInsetItem>
+        <SearchInsetItem>Карты</SearchInsetItem>
+        <SearchInsetItem>Маркет</SearchInsetItem>
+        <SearchInsetItem>Переводчик</SearchInsetItem>
+        <SearchInsetItem>Эфир</SearchInsetItem>
+        <SearchInsetItem>ещё</SearchInsetItem>
+      </SearchInset>
+      <SearchInput />
+      
     </div>
   );
 }
