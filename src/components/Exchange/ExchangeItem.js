@@ -1,5 +1,5 @@
 
-
+//курс валют
 const ExchangeItem = (props) => (
     <p {...props}>{props.children}</p> 
 )

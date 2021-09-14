@@ -1,5 +1,5 @@
 
-
+//виджет погоды
 const Weather = (props) => (
     <div className="weatherContainer">
         <img src='https://image.flaticon.com/icons/png/128/4814/4814247.png' alt="dasdas" className="weatherImg"/>

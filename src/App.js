@@ -2,8 +2,8 @@
 import './App.css';
 import NewsList from './components/NewsList/NewsList';
 import NewsListItem from './components/NewsList/NewsListItem';
-import HeaderInsetItem from './components/HeaderInset/HeaderInsetItem';
-import HeaderInset from './components/HeaderInset/HeaderInset';
+import InsetItem from './components/Inset/InsetItem';
+import Inset from './components/Inset/Inset';
 import Exchange from './components/Exchange/Exchange';
 import ExchangeItem from './components/Exchange/ExchangeItem';
 import SearchInput from './components/Search/SearchInput';
@@ -15,11 +15,11 @@ export default function App() {
 
   return (
     <div className='App'>
-      <HeaderInset className="headerInsetContainer">
-        <HeaderInsetItem className="link choosenLink">Сейчас в СМИ</HeaderInsetItem>
-        <HeaderInsetItem className="link choosenLink">Сейчас в Москве</HeaderInsetItem>
-        <HeaderInsetItem className="link choosenLink">Интересное</HeaderInsetItem>
-      </HeaderInset>
+      <Inset className="headerInsetContainer">
+        <InsetItem className="link choosenLink">Сейчас в СМИ</InsetItem>
+        <InsetItem className="link choosenLink">Сейчас в Москве</InsetItem>
+        <InsetItem className="link choosenLink">Интересное</InsetItem>
+      </Inset>
       <NewsList className="newsListContainer">
         <NewsListItem className="newsListItem">Путин не исключил уход на карантин из-за болеющих коронавирусом в его окружении</NewsListItem>
         <NewsListItem className="newsListItem">В крови погибших от отравления арбузом в Москве нашли следы этиленгликоля</NewsListItem>
@@ -32,24 +32,24 @@ export default function App() {
         <ExchangeItem className="exchangeItem">EUR MOEX 70,86</ExchangeItem>
         <ExchangeItem className="exchangeItem">НЕФТЬ 64,90</ExchangeItem>
       </Exchange>
-      <HeaderInset className="headerInsetContainer inputInsetContainer">
-        <HeaderInsetItem className="link inputInsetLink">Видео</HeaderInsetItem>
-        <HeaderInsetItem className="link inputInsetLink">Картинки</HeaderInsetItem>
-        <HeaderInsetItem className="link inputInsetLink">Новости</HeaderInsetItem>
-        <HeaderInsetItem className="link inputInsetLink">Карты</HeaderInsetItem>
-        <HeaderInsetItem className="link inputInsetLink">Маркет</HeaderInsetItem>
-        <HeaderInsetItem className="link inputInsetLink">Переводчик</HeaderInsetItem>
-        <HeaderInsetItem className="link inputInsetLink">Эфир</HeaderInsetItem>
-        <HeaderInsetItem className="link inputInsetLink">ещё</HeaderInsetItem>
-      </HeaderInset>
+      <Inset className="headerInsetContainer inputInsetContainer">
+        <InsetItem className="link inputInsetLink">Видео</InsetItem>
+        <InsetItem className="link inputInsetLink">Картинки</InsetItem>
+        <InsetItem className="link inputInsetLink">Новости</InsetItem>
+        <InsetItem className="link inputInsetLink">Карты</InsetItem>
+        <InsetItem className="link inputInsetLink">Маркет</InsetItem>
+        <InsetItem className="link inputInsetLink">Переводчик</InsetItem>
+        <InsetItem className="link inputInsetLink">Эфир</InsetItem>
+        <InsetItem className="link inputInsetLink">ещё</InsetItem>
+      </Inset>
       <SearchInput />
       <Adverisement />
-      <HeaderInset className="headerInsetContainer">
-        <HeaderInsetItem className="link choosenLink">
+      <Inset className="headerInsetContainer">
+        <InsetItem className="link choosenLink">
           Погода
-          <Weather/>
-        </HeaderInsetItem>
-      </HeaderInset>
+          <Weather />
+        </InsetItem>
+      </Inset>
     </div>
   );
 }
