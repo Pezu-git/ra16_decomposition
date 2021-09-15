@@ -1,7 +1,9 @@
 
 //курс валют
-const ExchangeItem = (props) => (
-    <p {...props}>{props.children}</p> 
-)
+function ExchangeItem(props) {
+    return (
+        props.children.map((item, index) =><p {...props} key={index}>{item}</p>)  
+    )    
+}
 
 export default ExchangeItem

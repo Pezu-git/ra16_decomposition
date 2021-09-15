@@ -1,7 +1,12 @@
 
 // Отображение ссылки на новость 
-const NewsListItem = (props) => (
-    <li {...props}>{props.children}</li>
-)
+
+function NewsListItem(props) {
+    return (
+            props.children.map((item, index) => 
+            <li className={props.className} key={index}>{item}</li>
+         )   
+    )  
+}
 
 export default NewsListItem
